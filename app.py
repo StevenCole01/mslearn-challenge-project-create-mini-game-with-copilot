@@ -7,7 +7,7 @@ rounds = 0
 
 while (continue_game):
     # get user input and validate it is a valid option from the options_list
-    user_input = input("Enter rock, paper, or scissors: ")
+    user_input = input("Enter rock, paper, or scissors: ").lower()
     while (user_input not in options_list):
         print("Invalid input. Please enter rock, paper, or scissors.")
         user_input = input("Enter rock, paper, or scissors: ")
